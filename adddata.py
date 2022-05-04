@@ -31,12 +31,10 @@ class Dodaj:
         print("adding ", idx, "for", datetime(year, month, day))
 
 
-d = Dodaj.addRecord()
-
 
 con = sqlite3.connect("person.db")
 cur = con.cursor()
-data =
+data = 0        # addRecord
 sql = ( " INSERT INTO ksiega (data, hora, tipo, recibio, cuota, celebro) VALUES (?,?,?,?,?,?) " )
 value = (data, "", "", "", "", "")
 cur.execute(sql, value)
